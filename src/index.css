@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  box-sizing: border-box;
+  font-size: 24px;
+
+  --dark-green: #00494d;
+  --sage: #5e7a7d;
+  --light-sage: #7f9c9f;
+  --light-green: #c5e4e7;
+  --lightest-green: #f4fafa;
+  --white: #ffffff;
+  --brand: #26c0ab;
+  --brand-hover: #9fe8df;
+  --inactive: #0d686d;
+  --error: #c67f6b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Mono', monospace, sans-serif;
+  font-weight: 700;
+}
+
+.site-wrapper {
+  background-color: var(--light-green);
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 1.5rem;
+}
+
+.site-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  letter-spacing: 0.4rem;
+  color: var(--dark-green);
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .site-wrapper {
+    padding-top: 6.5rem;
+  }
 }
