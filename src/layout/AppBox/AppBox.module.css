@@ -1,7 +1,7 @@
 .wrapper {
   background-color: var(--white);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 32px 1rem;
   max-width: 920px;
   margin: 2rem auto;
   font-size: 16px;
@@ -27,6 +27,9 @@
 }
 
 @media screen and (min-width: 920px) {
+  .wrapper {
+    padding: 2rem;
+  }
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
