@@ -43,6 +43,7 @@
   transition: all 0.3s;
   align-self: end;
   margin-top: 2rem;
+  letter-spacing: 0.1rem;
 }
 
 .resetBtn:hover {
