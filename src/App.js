@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // components
 import AppBox from './layout/AppBox';
@@ -6,6 +6,9 @@ import FormSection from './layout/FormSection';
 import ResultSection from './layout/ResultSection';
 
 function App() {
+  const [bill, setBill] = useState(0);
+  const [tip, setTip] = useState(0);
+  const [split, setSplit] = useState(0);
   return (
     <div className="site-wrapper">
       <header>
@@ -15,8 +18,15 @@ function App() {
         </h1>
       </header>
       <AppBox>
-        <FormSection />
-        <ResultSection />
+        <FormSection
+          bill={bill}
+          setBill={setBill}
+          tip={tip}
+          setTip={setTip}
+          split={split}
+          setSplit={setSplit}
+        />
+        <ResultSection bill={bill} tip={tip} split={split} />
       </AppBox>
     </div>
   );
