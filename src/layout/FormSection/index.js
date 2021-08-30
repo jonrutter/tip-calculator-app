@@ -1,14 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // styles
 import s from './FormSection.module.css';
 
-const FormSection = () => {
+// icons
+import { ReactComponent as DollarIcon } from '../../images/icon-dollar.svg';
+import { ReactComponent as PersonIcon } from '../../images/icon-person.svg';
+
+// components
+import InputField from '../../components/InputField';
+
+const FormSection = ({ bill, setBill, tip, setTip, split, setSplit }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className={s.wrapper}>
-      <div className={s.content}>
-        <h2>Form Section</h2>
-      </div>
+      <form className={s.content} onSubmit={handleSubmit}>
+        <div className={s.section}>
+          <InputField
+            name="bill"
+            icon={<DollarIcon />}
+            handle={setBill}
+            value={bill}
+          />
+        </div>
+        <div className={s.section}>
+          <InputField
+            name="number-of-people"
+            icon={<PersonIcon />}
+            handle={setSplit}
+            value={split}
+          />
+        </div>
+      </form>
     </div>
   );
 };
