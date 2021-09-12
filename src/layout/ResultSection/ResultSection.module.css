@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 0.25rem;
 }
 
@@ -31,6 +32,7 @@
 .price {
   font-size: 32px;
   color: var(--brand);
+  word-break: break-all;
 }
 
 .resetBtn {

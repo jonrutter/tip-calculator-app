@@ -1,3 +1,9 @@
+.wrapper {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
 .labelWrapper {
   display: flex;
   justify-content: space-between;
@@ -20,6 +26,8 @@
   position: relative;
   background-color: transparent;
   background-color: var(--lightest-green);
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .inputWrapper:focus {
@@ -50,6 +58,8 @@
   text-align: right;
   color: var(--dark-green);
   border-radius: 0.25rem;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .input:focus {

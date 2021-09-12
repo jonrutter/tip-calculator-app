@@ -1,0 +1,22 @@
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--dark-green);
+  color: var(--lightest-green);
+  display: block;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.hiddenInput {
+  opacity: 0.01;
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  left: -10000px;
+}
+
+.hiddenInput:checked ~ .button {
+  background-color: var(--brand);
+  color: var(--dark-green);
+}

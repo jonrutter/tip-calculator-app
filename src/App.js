@@ -9,6 +9,12 @@ function App() {
   const [bill, setBill] = useState(0);
   const [tip, setTip] = useState(0);
   const [split, setSplit] = useState(0);
+
+  const resetForm = () => {
+    setBill(0);
+    setSplit(0);
+  };
+
   return (
     <div className="site-wrapper">
       <header>
@@ -26,7 +32,12 @@ function App() {
           split={split}
           setSplit={setSplit}
         />
-        <ResultSection bill={bill} tip={tip} split={split} />
+        <ResultSection
+          bill={bill}
+          tip={tip}
+          split={split}
+          resetForm={resetForm}
+        />
       </AppBox>
     </div>
   );
