@@ -1,0 +1,49 @@
+.wrapper {
+  background-color: var(--dark-green);
+  border-radius: 0.5rem;
+  padding: 40px 1rem 1rem;
+}
+
+.content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-size: 16px;
+  color: var(--lightest-green);
+}
+
+.subtitle {
+  font-size: 13px;
+  color: var(--light-sage);
+}
+
+.price {
+  font-size: 32px;
+  color: var(--brand);
+  word-break: break-all;
+}
+
+@media screen and (min-width: 992px) {
+  .wrapper {
+    padding: 56px 40px 40px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 2rem;
+  }
+}

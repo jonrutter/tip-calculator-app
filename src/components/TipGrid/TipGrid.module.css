@@ -1,0 +1,24 @@
+.wrapper {
+  border: none;
+}
+
+.tipGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.label {
+  font-size: 16px;
+  color: var(--sage);
+  margin-bottom: 0.25rem;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .tipGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
