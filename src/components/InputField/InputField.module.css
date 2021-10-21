@@ -28,19 +28,22 @@
   background-color: var(--lightest-green);
   min-width: 100%;
   max-width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .inputWrapper:focus {
   border: 2px solid var(--brand);
 }
 
-.inputWrapper > svg {
+.icon {
   position: absolute;
   height: 1rem;
   top: 0.5rem;
   left: 0.75rem;
   line-height: 1;
   width: auto;
+  display: block;
 }
 
 .input {
