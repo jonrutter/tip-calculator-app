@@ -1,0 +1,16 @@
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--dark-green);
+  color: var(--lightest-green);
+  display: block;
+  border-radius: 0.25rem;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.active {
+  background-color: var(--brand);
+  color: var(--dark-green);
+}

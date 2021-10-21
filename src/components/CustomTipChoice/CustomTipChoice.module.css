@@ -1,0 +1,44 @@
+.wrapper {
+  position: relative;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--lightest-green);
+  color: var(--sage);
+  display: block;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.active {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  background-color: var(--lightest-green);
+  color: var(--dark-green);
+}
+
+.input {
+  border: none;
+  background-color: transparent;
+  color: var(--dark-green);
+  text-align: right;
+  outline: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  padding-right: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.input:focus {
+  border: 2px solid var(--brand);
+}
