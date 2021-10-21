@@ -12,16 +12,17 @@
   text-align: center;
 }
 
-.hiddenInput {
-  opacity: 0.01;
-  height: 1px;
-  width: 1px;
+.active {
   position: absolute;
-  left: -10000px;
-}
-
-.hiddenInput:checked ~ .button {
-  border: 2px solid var(--brand);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  background-color: var(--lightest-green);
+  color: var(--dark-green);
 }
 
 .input {
@@ -29,6 +30,15 @@
   background-color: transparent;
   color: var(--dark-green);
   text-align: right;
-  max-width: 4rem;
   outline: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  padding-right: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.input:focus {
+  border: 2px solid var(--brand);
 }
