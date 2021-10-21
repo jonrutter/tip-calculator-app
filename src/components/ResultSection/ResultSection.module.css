@@ -35,28 +35,6 @@
   word-break: break-all;
 }
 
-.resetBtn {
-  width: 100%;
-  background-color: var(--brand);
-  color: var(--dark-green);
-  text-transform: uppercase;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-  transition: all 0.3s;
-  align-self: end;
-  margin-top: 2rem;
-  letter-spacing: 0.1rem;
-}
-
-.resetBtn:hover {
-  background-color: var(--brand-hover);
-}
-
-.resetBtn:disabled {
-  background-color: var(--inactive);
-  cursor: auto;
-}
-
 @media screen and (min-width: 992px) {
   .wrapper {
     padding: 56px 40px 40px;

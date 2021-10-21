@@ -2,11 +2,14 @@ import React from 'react';
 
 import { useGlobalContext } from '../../context';
 
+// components
+import ResetButton from '../ResetButton';
+
 // styles
 import s from './ResultSection.module.css';
 
 const ResultSection = () => {
-  const { personTip, personTotal, canReset, resetForm } = useGlobalContext();
+  const { personTip, personTotal } = useGlobalContext();
 
   return (
     <div className={s.wrapper}>
@@ -30,13 +33,7 @@ const ResultSection = () => {
           </div>
         </section>
 
-        <button
-          onClick={resetForm}
-          className={!canReset ? `${s.resetBtn} ${s.disabled}` : s.resetBtn}
-          disabled={!canReset}
-        >
-          Reset
-        </button>
+        <ResetButton />
       </div>
     </div>
   );
