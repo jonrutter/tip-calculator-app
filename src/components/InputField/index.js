@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // styles
 import s from './InputField.module.css';
@@ -9,23 +9,31 @@ const createLabel = (name) => {
   return processedName.slice(0, 1).toUpperCase() + processedName.slice(1);
 };
 
-const InputField = ({ name, icon, handle, value }) => {
+const InputField = ({ name, icon, callback, value, min = 1, step = 1 }) => {
+  const [input, setInput] = useState(value);
   const [error, setError] = useState('');
 
-  const handleChange = (e) => {
-    handle(e.target.value);
-    let value = parseFloat(e.target.value);
-    // error checking
+  useEffect(() => {
+    setInput(value);
+  }, [value]);
 
+  const handleChange = (e) => {
+    let value = parseFloat(e.target.value);
+
+    // error checking
     if (e.target.value === '') {
       // checking for empty fields. Must do this before checking for NaN, because an empty string will also evaluate to NaN
-      setError("Can't be empty");
+      setError('Please enter a number');
+      setInput('');
     } else if (Number.isNaN(value)) {
-      setError('Must be a number');
+      setError('Please enter a number');
     } else if (value === 0) {
-      setError("Can't be zero");
+      setError('Please enter a number');
+      setInput(e.target.value);
     } else {
       setError('');
+      setInput(e.target.value);
+      callback(value);
     }
   };
 
@@ -39,15 +47,19 @@ const InputField = ({ name, icon, handle, value }) => {
       </div>
 
       <div className={s.inputWrapper}>
-        {icon}
+        <img src={icon} alt="" className={s.icon} />
         <input
-          type="tel"
+          formNoValidate
+          type="number"
           className={error ? `${s.input} ${s.error}` : s.input}
           placeholder="0"
           id={name}
-          value={value === 0 ? '' : value}
+          value={input}
           onChange={handleChange}
           name={name}
+          required
+          min={min}
+          step={step}
         />
       </div>
     </div>
