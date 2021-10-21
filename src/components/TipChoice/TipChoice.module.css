@@ -6,17 +6,11 @@
   display: block;
   border-radius: 0.25rem;
   text-align: center;
+  cursor: pointer;
+  width: 100%;
 }
 
-.hiddenInput {
-  opacity: 0.01;
-  height: 1px;
-  width: 1px;
-  position: absolute;
-  left: -10000px;
-}
-
-.hiddenInput:checked ~ .button {
+.active {
   background-color: var(--brand);
   color: var(--dark-green);
 }

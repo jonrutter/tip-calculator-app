@@ -8,19 +8,15 @@ const createLabel = (value) => {
   return percent.toString() + '%';
 };
 
-const TipChoice = ({ handle, value }) => {
+const TipChoice = ({ callback, value, tip }) => {
   return (
     <li>
-      <input
-        type="radio"
-        name="tip"
-        id={createLabel(value)}
-        className={s.hiddenInput}
-        onClick={() => handle(value)}
-      />
-      <label htmlFor={createLabel(value)} className={s.button}>
+      <button
+        className={tip === value ? `${s.button} ${s.active}` : s.button}
+        onClick={() => callback(value)}
+      >
         {createLabel(value)}
-      </label>
+      </button>
     </li>
   );
 };
