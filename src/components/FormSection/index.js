@@ -21,7 +21,7 @@ const FormSection = () => {
   };
 
   const create = (type) => (amount) => ({
-    type: 'UPDATE_' + type,
+    type: `UPDATE_${type}`,
     payload: amount,
   });
 
