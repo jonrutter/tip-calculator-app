@@ -6,7 +6,7 @@ import * as s from './ResetButton.module.css';
 const ResetButton = () => {
   const { canReset, dispatch } = useGlobalContext();
 
-  const resetForm = dispatch({ type: 'RESET_FORM' });
+  const resetForm = () => dispatch({ type: 'RESET_FORM' });
 
   return (
     <button
