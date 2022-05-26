@@ -2,9 +2,9 @@
 
 ![Netlify Status](https://api.netlify.com/api/v1/badges/cdda4b51-ac26-4cdc-bd08-65d78e71c1ad/deploy-status)
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://jonrutter-splitter.netlify.app/)
-[![Current Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/jonrutter/react-tip-calculator)
-[![GitHub Stars](https://img.shields.io/github/stars/jonrutter/react-tip-calculator.svg)](https://github.com/jonrutter/react-tip-calculator/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/jonrutter/react-tip-calculator.svg)](https://github.com/jonrutter/react-tip-calculator/issues)
+[![Current Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/rutterjt/react-tip-calculator)
+[![GitHub Stars](https://img.shields.io/github/stars/rutterjt/react-tip-calculator.svg)](https://github.com/rutterjt/react-tip-calculator/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/rutterjt/react-tip-calculator.svg)](https://github.com/rutterjt/react-tip-calculator/issues)
 
 Splitter is a tip calculator web app.
 
@@ -47,9 +47,9 @@ Preview the live demo: [https://jonrutter-splitter.netlify.app/](https://jonrutt
 
 **Jon Rutter**
 
-- [GitHub Profile](https://www.github.com/jonrutter)
-- [Email](mailto:contact@jonrutter.com)
-- [Website](https://www.jonrutter.com)
+- [GitHub Profile](https://www.github.com/rutterjt)
+- [Email](mailto:contact@jonrutter.io)
+- [Website](https://www.jonrutter.io)
 
 ## License
 
